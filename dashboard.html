@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle</title>
+    <link rel="stylesheet" href="dashboard-style.css">
+</head>
+<body class="dark"> <!-- Defina um tema padrão, se necessário -->
+    <div class="dashboard-container">
+        <h1>Painel de Controle</h1>
+        
+        <div class="info-cards">
+            <div class="card">
+                <h2>Histórico de Atividades</h2>
+                <p>Última login: 20/10/2024</p>
+                <p>Alterações feitas: 3</p>
+                <a class="styled-link" href="history.html">Ver histórico completo</a>
+            </div>
+            <div class="card">
+                <h2>Links Úteis</h2>
+                <p>
+                    
+                </p>
+                <div class="logo-container">
+                    <a href="https://www.mercadolivre.com.br" target="_blank">
+                        <img src="mercado livre.jpg" alt="Mercado Livre" class="logo">
+                    </a>
+                    <a href="https://www.shopee.com.br" target="_blank">
+                        <img src="shopee.jpg" alt="Shopee" class="logo">
+                    </a>
+                
+                </div>
+            </div>
+            <div class="card">
+                <h2>Notificações</h2>
+                <p>Você tem 3 novas notificações.</p>
+                <a class="styled-link" href="notifications.html">Ver Notificações</a>
+            </div>
+            <div class="card">
+                <h2>Preferências de Segurança</h2>
+                <p>Autenticação em duas etapas: <strong>Desativada</strong></p>
+                <a class="styled-link" href="security-settings.html">Gerenciar Segurança</a>
+            </div>
+        </div>
+
+        <button onclick="window.location.href='settings.html'">Configurações</button>
+        <button onclick="logout()">Sair</button>
+    </div>
+
+    <script src="dashboard-script.js"></script>
+</body>
+</html>

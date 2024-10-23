@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    opacity: 0; /* Começa invisível */
+    transition: opacity 1.5s ease; /* Suave para transições de opacidade */
+}
+
+/* Fade-in para a animação de entrada */
+.fade-in {
+    animation: fadeIn 5s forwards; /* Animação de 2 segundos */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Fade-out para a animação de saída */
+.fade-out {
+    animation: fadeOut 5.5s forwards; /* Animação de 1.5 segundos para a saída */
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}

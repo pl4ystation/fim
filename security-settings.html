@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Segurança</title>
+    <link rel="stylesheet" href="security-settings.css"> <!-- Link para o CSS -->
+</head>
+<body class="dark"> <!-- Fundo escuro -->
+    <div class="security-container">
+        <h1>Gerenciar Segurança</h1>
+        
+        <div class="security-option">
+            <h2>Alterar Senha</h2>
+            <form id="change-password-form">
+                <input type="password" placeholder="Nova Senha" required>
+                <input type="password" placeholder="Confirmar Nova Senha" required>
+                <button type="submit">Alterar Senha</button>
+            </form>
+        </div>
+
+        <div class="security-option">
+            <h2>Autenticação em Duas Etapas</h2>
+            <p>Atualmente: <strong>Desativada</strong></p>
+            <button id="toggle-2fa">Ativar Autenticação</button>
+        </div>
+
+        <div class="security-option">
+            <h2>Dispositivos Conectados</h2>
+            <p>Você está conectado em 2 dispositivos.</p>
+            <button onclick="window.location.href='devices.html'">Ver Dispositivos</button>
+        </div>
+
+        <button onclick="window.location.href='dashboard.html'">Voltar ao Painel de Controle</button>
+    </div>
+
+    <script src="security-settings.js"></script> <!-- Link para o JavaScript -->
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Microsoft</title>
+    <link rel="stylesheet" href="form-style.css">
+</head>
+<body>
+    <div class="form-container fade-in">
+        <h1>Bem-vindo</h1>
+        <p>Insira suas informações abaixo para continuar</p>
+
+        <form id="login-form">
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" required placeholder="Digite seu e-mail">
+            
+            <label for="password">Senha:</label>
+            <input type="password" id="password" required placeholder="Digite sua senha">
+            
+            <button type="submit">Entrar</button>
+        </form>
+        
+        <p><a href="reset-password.html" class="reset-password-link">Esqueci a senha</a></p> <!-- Link para a página de redefinição de senha -->
+    </div>
+
+    <script src="form-script.js"></script>
+</body>
+</html>

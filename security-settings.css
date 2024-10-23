@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.security-container {
+    width: 90%;
+    max-width: 600px; /* Largura máxima da página de segurança */
+    background-color: #1a1a1a; /* Fundo escuro para o painel */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #0078D4; /* Cor do título */
+    margin-bottom: 20px;
+    font-size: 2rem; /* Tamanho do título */
+}
+
+.security-option {
+    margin-bottom: 30px; /* Espaço entre as opções de segurança */
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333; /* Fundo dos inputs */
+    color: #fff; /* Texto dos inputs */
+}
+
+button {
+    background-color: #0078D4; /* Cor do botão */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 1rem; /* Tamanho do texto do botão */
+}
+
+button:hover {
+    background-color: #0056a0; /* Cor do botão ao passar o mouse */
+}
